@@ -1,3 +1,4 @@
+```
 {
   "query": "query ($request: [UserInput!]!) { validateDynamic(input: $request) { index inputType valid message invalidFields } }",
   "variables": {
@@ -14,4 +15,4 @@
       }
     ]
   }
-}
+}```
