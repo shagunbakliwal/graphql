@@ -1,0 +1,17 @@
+type ValidationResult {
+    index: Int
+    inputType: String
+    valid: Boolean
+    message: String
+    invalidFields: [String]
+}
+
+input UserInput {
+    username: String
+    email: String
+    age: Int
+}
+
+type Query {
+    validateUsersList(input: [UserInput!]!): [ValidationResult]
+}
